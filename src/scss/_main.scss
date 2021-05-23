@@ -39,6 +39,7 @@
   }
 
   &-slider {
+    padding: 26px 0;
     &__item {
       width: 100%;
     }
@@ -134,12 +135,14 @@
       flex-flow: row nowrap;
       align-items: flex-end;
       position: absolute !important;
+      width: auto;
       bottom: 0;
       left: 0;
       padding-top: 20px !important;
 
       &-list {
         display: flex;
+        justify-content: flex-start;
         flex-flow: row nowrap;
         align-items: center;
       }
@@ -150,6 +153,7 @@
         cursor: pointer;
         transition: all .2s ease-in-out;
         position: relative;
+        width: 87px !important;
 
         &::after {
           content: "";
@@ -780,7 +784,8 @@
   }
 
   &__img {
-    flex: 1 0 215px;
+    //flex: 1 0 215px;
+    width: 215px;
 
     img {
       width: 100%;
@@ -789,7 +794,8 @@
   }
 
   &__body {
-    flex: auto;
+    //flex: auto;
+    width: 79%;
     padding-left: 25px;
   }
 
@@ -844,10 +850,43 @@
       width: 50%;
     }
   }
+
+  &-shops {
+    width: 100%;
+
+    &-layout {
+      padding: 0 60px;
+      position: relative;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+    border-radius: 150px;
+    border: 1px solid #e9e9e9;
+    transition: all .2s ease-in-out;
+
+    &::after {
+      font-size: 13px;
+      color: #333;
+    }
+
+    &:hover {
+      transition: all .2s ease-in-out;
+      background: #30a657;
+
+      &::after {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .shops {
   padding: 80px 0;
+  position: relative;
 
   &-title {
     font-style: normal;
@@ -915,8 +954,6 @@
         color: #fff;
       }
     }
-
-
   }
 
 }
