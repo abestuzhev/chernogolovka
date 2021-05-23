@@ -19,7 +19,37 @@
 
   .better-img {
     width: 50%;
-    padding-top: 40%;
+    padding-top: 30%;
+  }
+
+  .better-decor-12 {
+    bottom: 60%;
+    left: 35%;
+  }
+
+  .better-decor-15 {
+    top: 36%;
+    right: 31%;
+  }
+
+  .better-decor-13 {
+    bottom: 79%;
+    left: 60%;
+  }
+
+  .better-decor-11 {
+    bottom: 72%;
+    left: 6%;
+  }
+
+  .better-decor-10 {
+    top: 40%;
+    left: 17%;
+  }
+
+  .better-decor-16 {
+    bottom: 52%;
+    right: 2%;
   }
 }
 
@@ -39,6 +69,36 @@
   .better-advantage {
     margin-bottom: 60px;
   }
+
+  .beverages-card-products-list {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+
+  .beverages-card-btn {
+    top: 59%;
+    left: 66%;
+    opacity: .8;
+  }
+
+  .beverages-card-img__sheet-5 {
+    display: none;
+  }
+
+  //.beverages-card-products {
+  //  right: 40%;
+  //  left: auto;
+  //}
+
+  .beverages {
+    padding-top: 130px;
+  }
+
+  .beverages-card__body {
+    width: 45%;
+  }
+
 }
 
 @media (max-width: 1000px) {
@@ -53,6 +113,7 @@
 
   .better-img {
     width: 100%;
+    padding-top: 45%;
   }
 
   .better-decor-1 {
@@ -65,6 +126,34 @@
   }
 }
 
+@media (max-width: 991px) {
+  .beverages {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .beverages-card {
+    flex-direction: column;
+  }
+
+  .beverages-card__body {
+    width: 100%;
+  }
+
+  .beverages-card-info {
+    width: 100%;
+  }
+
+  .beverages-card-img {
+    width: 100%;
+  }
+
+  .beverages-card-info {
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 780px) {
   .better-title {
     font-size: 30px;
@@ -73,6 +162,62 @@
 
   .better-advantage {
     margin-bottom: 40px;
+  }
+
+  .better-decor-12 {
+    width: 15%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .better-decor-15 {
+    top: 23%;
+    right: 13%;
+    width: 22%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .better-decor-13 {
+    width: 17%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .better-decor-11 {
+    width: 18%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .better-decor-10 {
+    top: 36%;
+    left: 17%;
+    width: 12%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .better-decor-16 {
+    display: none;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .better-decor-2 {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -102,15 +247,37 @@
     }
   }
 
-  .better-decor img {
-    width: 50%;
+  .shops {
+    padding: 40px 0;
+
+    &-title {
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 24px;
+    }
   }
+
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 0;
+  }
+
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 0;
+  }
+
+  .beverages-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+
 }
 
 @media (max-width: 480px) {
   .better-title {
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 42px;
   }
 
   .better-slogan__img {
@@ -129,5 +296,13 @@
 
   .better-advantage__item {
     margin-bottom: 24px;
+  }
+
+  .better-decor-1 {
+    width: 73%;
+  }
+
+  .better-img {
+    padding-top: 60%;
   }
 }
