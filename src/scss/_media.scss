@@ -99,6 +99,7 @@
     width: 45%;
   }
 
+
 }
 
 @media (max-width: 1000px) {
@@ -139,18 +140,34 @@
 
   .beverages-card__body {
     width: 100%;
+    order:2;
   }
 
   .beverages-card-info {
     width: 100%;
+    padding-top: 0;
+    margin-bottom: 46px;
   }
 
   .beverages-card-img {
     width: 100%;
+    order: 1;
+    margin-bottom: 40px;
   }
 
-  .beverages-card-info {
-    padding-top: 0;
+  .beverages-card-btn {
+    top: 40%;
+    left: 50%;
+  }
+
+  .beverages-card-products {
+    bottom: auto;
+    top: 7%;
+    left: auto;
+    right: 14%;
+  }
+  .beverages .swiper-pagination {
+    opacity: 1;
   }
 }
 
@@ -219,9 +236,29 @@
       width: 100%;
     }
   }
+
+  .beverages-card-img__sheet-1,
+  .beverages-card-img__sheet-2 {
+    display: none;
+  }
+
+  .beverages-card-img__sheet-3 {
+    top: 30%;
+    right: 0%;
+  }
+
+  .beverages-card-img__sheet-3 {
+    width: 19vw;
+    img {width: 100%;}
+  }
+
+  .beverages-card-img__sheet-4 {
+    width: 16vw;
+    img {width: 100%;}
+  }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 544px) {
   .better-slogan__img {
     flex: 1 0 67px;
 
@@ -270,6 +307,45 @@
     line-height: 24px;
   }
 
+  .beverages-card-img__round {
+    width: 100%;
+    height: auto;
+  }
+
+  .beverages-card-img__product {
+    width: 40vw;
+    img {width: 100%}
+  }
+
+  .beverages-card-img__fruit-1 {
+    width: 43vw;
+    img {width: 100%}
+  }
+
+  .beverages-card-img__fruit-2 {
+    width: 46vw;
+    img {width: 100%}
+  }
+
+  .beverages-card-img__bubbles {
+    width: 56vw;
+    img {width: 100%}
+  }
+
+  .beverages-card-products {
+    top: 4%;
+    right: 0%;
+  }
+
+  .beverages-card-img__bubbles {
+    left: 40%;
+  }
+
+  .beverages-arrow-link {
+    width: 45px;
+    height: 45px;
+    margin: 15px;
+  }
 
 }
 
@@ -304,5 +380,21 @@
 
   .better-img {
     padding-top: 60%;
+  }
+
+  .beverages-card-img__round {
+    width: 90%;
+  }
+
+  .beverages-card-img__product {
+    width: 30vw;
+  }
+
+  .beverages-card-img__fruit-2 {
+    width: 36vw;
+  }
+
+  .beverages-card-img__fruit-1 {
+    width: 33vw;
   }
 }

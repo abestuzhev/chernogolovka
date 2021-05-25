@@ -89,6 +89,19 @@ const slider = new Swiper(".js-beverages-slider", {
   thumbs: {
     swiper: products,
   },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: "auto",
+  //   },
+  //   540: {
+  //     slidesPerView: 1,
+  //   },
+  // }
 });
 
 // var swiper = new Swiper(".mySwiper", {

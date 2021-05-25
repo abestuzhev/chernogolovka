@@ -45,6 +45,10 @@
     }
   }
 
+  .swiper-pagination {
+    opacity: 0;
+  }
+
   &-grid {
     position: relative;
   }
@@ -955,5 +959,15 @@
       }
     }
   }
+}
 
+
+.swiper-pagination-bullet {
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
 }
