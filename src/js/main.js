@@ -93,36 +93,7 @@ const slider = new Swiper(".js-beverages-slider", {
     el: '.swiper-pagination',
     dynamicBullets: true,
   },
-
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: "auto",
-  //   },
-  //   540: {
-  //     slidesPerView: 1,
-  //   },
-  // }
 });
-
-// var swiper = new Swiper(".mySwiper", {
-//   loop: true,
-//   spaceBetween: 10,
-//   slidesPerView: 4,
-//   freeMode: true,
-//   watchSlidesVisibility: true,
-//   watchSlidesProgress: true,
-// });
-// var swiper2 = new Swiper(".mySwiper2", {
-//   loop: true,
-//   spaceBetween: 10,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   thumbs: {
-//     swiper: swiper,
-//   },
-// });
 
 
 
@@ -164,7 +135,65 @@ $(function(){
     console.log("hello")
     $(".product-popup-layout").toggleClass("is-open");
   })
+
+  var $html = $('html');
+  var $header = $('.header_wrap header');
+
+  function showPopup(icon, popup) {
+    $(document).on('click', icon, function (e) {
+
+      e.preventDefault();
+      const costType = $(this).attr('data-type');
+      const costName = $(this).attr('data-name');
+      console.log('type', costType);
+      console.log('name', costName);
+      if (costType !== '') {
+
+        $(popup).addClass(costType);
+        $(popup).find('.popup-title').text(costName)
+      }
+
+      $(popup).addClass('is-visible');
+      $('.mfp-bg').addClass('is-visible');
+
+
+      $html.addClass('blocked');
+      // $('body').addClass('blocked');
+
+      var widthScroll = windowWidth - documentWidth;
+      console.log('widthScroll: ' + widthScroll);
+      if (windowWidth > documentWidth) {
+        $html.css({
+          'margin-right': widthScroll
+        });
+        $header.css({
+          'padding-right': widthScroll
+        });
+      }
+    });
+  }
+
+  $(document).on('click', '.js-popup-close', function (e) {
+    e.preventDefault();
+    $(this).parents('.mfp-wrap').removeClass('is-visible');
+    $('.mfp-bg').removeClass('is-visible');
+    $html.css({
+      'margin-right': '0'
+    }).removeClass('blocked');
+
+    $header.css({
+      'padding-right': '0'
+    });
+
+    var parentModal = $(this).parents('.mfp-wrap');
+    if (parentModal.data('save')) {
+      onPopupClose(parentModal);
+    }
+  });
+
+  showPopup(".product-beverage .js-show-popup", '#product-popup');
 });
+
 
 
 /****************************************************************/

@@ -90,41 +90,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 1;
+  opacity: .5;
   background-color: #000;
-  background:
-    radial-gradient(21.28% 49.6% at 0% 33.06%, #14D6C2 0%, rgba(54, 242, 152, 0.17) 100%),
-    linear-gradient(251.8deg, rgba(255, 255, 255, 0) 52.54%, #7BD6FB 100%),
-    linear-gradient(252.44deg, #AAFFD6 0%, rgba(255, 255, 255, 0) 58.85%),
-    linear-gradient(107.41deg, #006AB9 0%, #1EBDFE 99.76%);
-
-  animation: 10s background 2s ease infinite;
 }
-
-.standart .c-btn,
-.standart .mfp-content-bg {
-  background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
-
-  .c-btn {
-    background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
-  }
-}
-
-.business .c-btn,
-.business .mfp-content-bg {
-  background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
-
-  .c-btn {
-    background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
-  }
-}
-
-.maximum .c-btn,
-.maximum .mfp-content-bg {
-  background: linear-gradient(90.05deg, #DB40A2 0.05%, #FFA6BB 99.96%);
-
-}
-
 
 .white-popup-block {
   background: #FFF;
@@ -184,7 +152,7 @@ html.blocked, body.blocked {
 /*popup----------------------------*/
 
 .popup {
-  max-width: 430px;
+  max-width: 1170px;
   //background-color: #FFF;
   //border-top: 3px solid #f06314;
   overflow: hidden;
@@ -194,7 +162,8 @@ html.blocked, body.blocked {
   margin: 0 auto;
   position: relative;
   z-index: 10;
-  padding: 55px;
+  //padding: 55px;
+  font-size: 15px;
 
   .c-form {
     color: #fff;
@@ -271,7 +240,7 @@ html.blocked, body.blocked {
 
 @media (max-width: 580px) {
   .popup {
-    padding: 16px;
+    padding: 0;
 
     &-close {
       right: 16px;

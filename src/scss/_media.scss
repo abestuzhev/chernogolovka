@@ -111,7 +111,7 @@
   .product-beverage {
 
     &-goods {
-      padding: 100px 0 60px;
+      padding: 50px 0 60px;
     }
 
     &-slogan {
@@ -202,9 +202,49 @@
         }
       }
     }
+
+    &-banner {
+      &-voice {
+        padding: 23px;
+        width: 378px;
+        &__text {
+          font-size: 24px;
+          line-height: 30px;
+        }
+
+        &__btn {
+          span {
+            &:nth-child(1) {
+              width: 100px;
+              height: 100px;
+            }
+            &:nth-child(2) {
+              width: 70px;
+              height: 70px;
+            }
+          }
+
+          svg {
+            width: 26px;
+          }
+        }
+      }
+    }
   }
 
+  .product-popup {
+    padding: 40px;
 
+    &__body {
+      width: 75%;
+    }
+
+    &-info {
+      &__calories {
+        padding-left: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -234,12 +274,139 @@
   .product-beverage .shops {
     padding: 0 0 40px;
   }
+
+  .product-beverage {
+    &-banner {
+      &-voice {
+        top: 103%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        box-shadow: 1px 3px 7px rgba(0,0,0,.15);
+      }
+
+      &__layout {
+        padding-bottom: 130px;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
   .beverages {
     padding-top: 40px;
     padding-bottom: 60px;
+
+  }
+
+  .product-beverage {
+    &-banner {
+      padding-top: 24px;
+      background-position: bottom center;
+
+      &__filter {
+        display: none;
+      }
+
+      &__logo {
+        top: 63%;
+      }
+
+      &__bottle  {
+        &> img {
+          position: static;
+          transform: none;
+        }
+      }
+
+      &__decor-1 {
+        right: -4%;
+        img {
+          width: 35vw;
+        }
+      }
+      &__decor-2 {
+        img {
+          width: 19vw;
+        }
+      }
+      &__decor-3 {
+        bottom: auto;
+        top: 4%;
+        img {
+          width: 35vw;
+        }
+
+      }
+      &__decor-4 {
+        bottom: 17%;
+        left: 11%;
+        img {
+          width: 18vw;
+        }
+      }
+      &__decor-5 {
+        img {
+          width: 18vw;
+        }
+      }
+      &__decor-6 {
+        left: -6%;
+        img {
+          width: 40vw;
+        }
+      }
+      &__decor-7 {
+
+        img {
+          width: 29vw;
+        }
+
+      }
+    }
+  }
+
+  .product-popup {
+    flex-direction: column;
+
+    &-close {
+      right: 20px;
+      top: 20px;
+    }
+
+    &__img {
+      width: 100%;
+      margin-bottom: 40px;
+      height: 350px;
+      text-align: center;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    &__body {
+      width: 100%;
+      padding: 0;
+    }
+
+    &-info {
+      &__text {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      &__grid {
+        flex-direction: column;
+      }
+
+      &__calories {
+        padding: 0;
+      }
+    }
+  }
+
+  .mfp-content {
+    width: 100%;
   }
 
 }
@@ -292,6 +459,11 @@
         height: 18px;
       }
     }
+  }
+
+  .product-popup {
+    padding: 30px;
+
   }
 }
 
@@ -387,7 +559,7 @@
   }
 
   .product-beverage-goods {
-    padding: 90px 0 50px;
+    padding: 40px 0 50px;
   }
 
   .product-beverage {
@@ -399,6 +571,38 @@
       }
       &__text {
         font-size: 26px;
+      }
+    }
+
+    &-banner {
+      &__layout {
+        padding-bottom: 100px;
+      }
+
+      &-voice {
+        width: 278px;
+        &__text {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        &__btn {
+          span {
+            &:nth-child(1) {
+              width: 67px;
+              height: 67px;
+            }
+            &:nth-child(2) {
+              width: 50px;
+              height: 50px;
+            }
+          }
+
+          svg {
+            width: 13px;
+            margin-left: 2px;
+          }
+        }
       }
     }
   }
@@ -562,6 +766,7 @@
   }
 
   .product-beverage {
+
     &-slogan {
 
       &__img {
@@ -571,6 +776,22 @@
       &__text {
         font-size: 18px;
         padding-left: 14px;
+      }
+    }
+
+    &-banner {
+      &__decor-5 {
+        display: none;
+      }
+    }
+  }
+
+  .product-popup {
+    &-head {
+      &__title {
+        padding-left: 20px;
+        font-size: 13px;
+        line-height: 18px;
       }
     }
   }
@@ -634,5 +855,9 @@
       font-size: 13px;
       line-height: 15px;
     }
+  }
+
+  .product-popup {
+    padding: 16px;
   }
 }
