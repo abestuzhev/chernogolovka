@@ -154,7 +154,7 @@ const documentWidth = (document.documentElement.clientWidth); // ширина м
 // }
 
 $(function(){
-  $(".product-beverage-list__link").on("click", function(e){
+  $(".js-show-popup").on("click", function(e){
     e.preventDefault();
     $(".product-popup-layout").toggleClass("is-open");
   })

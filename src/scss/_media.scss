@@ -107,35 +107,101 @@
     display: none;
   }
 
-  .product-beverage-list {
-    justify-content: space-between;
-    flex-flow: row wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-    align-items: stretch;
-  }
 
-  .product-beverage-list__item {
-    width: 25%;
-    padding: 10px;
-    height: 100%;
-    margin: 0;
+  .product-beverage {
 
-    img {
-      display: block;
-      width: auto;
-      height: 100%;
+    &-goods {
+      padding: 100px 0 60px;
     }
-  }
 
-  .product-beverage-list__link {
-    padding: 10px;
-    border-radius: 20px;    
-    box-shadow: 1px 2px 2px 0 rgba(0,0,0,.15);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 190px;
+    &-slogan {
+
+      &__img {
+        width: 130px;
+        height: 130px;
+      }
+      &__text {
+        font-size: 30px;
+      }
+    }
+
+
+
+    &-list {
+      flex-flow: row wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+      align-items: stretch;
+
+      &__title {
+        display: block;
+        text-align: center;
+      }
+
+      &__link {
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 1px 3px 7px 0 rgba(0,0,0,.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 290px;
+      }
+
+      &__item {
+        width: 25%;
+        padding: 10px;
+        height: 100%;
+        margin: 0;
+        position: relative;
+
+        &:hover {
+          .beverages-card-btn {
+            opacity: 1;
+            visibility: visible;
+          }
+          &::after {
+            display: none;
+          }
+
+          img {
+            transform: none;
+          }
+        }
+
+        img {
+          display: block;
+          width: auto;
+          max-height: 87%;
+          transform: none;
+        }
+
+        .beverages-card-btn {
+
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: rgba(32, 104, 44, .7);
+          &:hover {
+            opacity: 1;
+            background: rgba(32, 104, 44, .7);
+          }
+
+          &::after {
+            width: 110px;
+            height: 110px;
+          }
+
+          span {
+            font-size: 13px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
   }
 
 
@@ -164,6 +230,10 @@
     font-size: 40px;
     line-height: 50px;
   }
+
+  .product-beverage .shops {
+    padding: 0 0 40px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -171,6 +241,7 @@
     padding-top: 40px;
     padding-bottom: 60px;
   }
+
 }
 
 @media (max-width: 860px) {
@@ -309,6 +380,32 @@
     width: 16vw;
     img {width: 100%;}
   }
+
+
+  .product-beverage-list__item {
+    width: 33.333%;
+  }
+
+  .product-beverage-goods {
+    padding: 90px 0 50px;
+  }
+
+  .product-beverage {
+    &-slogan {
+
+      &__img {
+        width: 80px;
+        height: 80px;
+      }
+      &__text {
+        font-size: 26px;
+      }
+    }
+  }
+
+
+
+
 }
 
 @media (max-width: 544px) {
@@ -426,6 +523,58 @@
       height: 40vw;
     }
   }
+
+  .product-beverage-list {
+    &__item {
+      width: 50%;
+
+      .beverages-card-btn {
+        width: 65px;
+        height: 65px;
+
+        &::after {
+          width: 81px;
+          height: 81px;
+        }
+
+        span {
+          font-size: 9px;
+          line-height: 11px;
+        }
+      }
+
+      img {
+        max-height: 82%;
+      }
+    }
+
+    &__title {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 9px;
+      line-height: 11px;
+    }
+
+    &__link {
+      padding: 10px;
+      height: 190px;
+    }
+  }
+
+  .product-beverage {
+    &-slogan {
+
+      &__img {
+        width: 64px;
+        height: 64px;
+      }
+      &__text {
+        font-size: 18px;
+        padding-left: 14px;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 480px) {

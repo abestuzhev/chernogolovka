@@ -373,6 +373,7 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+
     &__img {
 
     }
@@ -486,6 +487,7 @@
     position: relative;
     background-size: cover;
 
+
     &__filter {
       position: absolute;
       z-index: 1;
@@ -499,6 +501,17 @@
 
     &__bottle {
       position: relative;
+      overflow: hidden;
+      width: 23vw;
+      text-align: center;
+      min-height: 48vw;
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+      }
     }
 
     &-voice {
@@ -638,6 +651,12 @@
 
     &__img {
 
+      width: 170px;
+      height: 170px;
+      img {
+        display: block;
+        width: 100%;
+      }
     }
 
     &__text {
@@ -647,8 +666,8 @@
       font-size: 40px;
 
       div {
-        font-size: 60px;
-        line-height: 73px;
+        line-height: 1.3em;
+        font-size: 1.5em;
       }
     }
   }
@@ -663,11 +682,24 @@
     justify-content: flex-start;
     align-items: flex-end;
 
+    &__title {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #222222;
+      display: none;
+    }
 
     &__item {
       transition: all .2s ease-in-out;
       position: relative;
       margin-right: 30px;
+
+      .beverages-card-btn {
+        opacity: 0;
+        visibility: hidden;
+      }
 
       img {
         transition: all .2s ease-in-out;
@@ -714,7 +746,8 @@
     }
 
     &__link {
-      display: block;
+      display: flex;
+      flex-direction: column;
       img {
 
       }
