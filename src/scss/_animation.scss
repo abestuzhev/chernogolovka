@@ -1,17 +1,126 @@
 .beverages {
 
   &-card {
-    &-img {
-      transition: all 1s ease;
-        transform: scale(.5);
+
+    &-info {
+      &__title,
+      &__text {
+        opacity: 0;
+      }
     }
+
+    &-btn {
+      opacity: 0;
+      transition: all 1s ease !important;
+    }
+
+    &-img {
+      &__round {
+        transition: all 1s ease ;
+        transform: translateX(-50%) scale(.3);
+      }
+
+      &__product {
+        transform: scale(0);
+      }
+
+      &__fruit-1 {
+        transform: translateX(-60%) scale(0);
+      }
+
+      &__fruit-2 {
+        transform: scale(0);
+      }
+
+      &__sheet-1,
+      &__sheet-2,
+      &__sheet-3,
+      &__sheet-4,
+      &__sheet-5 {
+        opacity: 0;
+      }
+      /**/
+    }
+
+
   }
 
   &-slider {
     .swiper-slide-active {
-      .beverages-card-img {
-        transition: all 1s ease;
-        transform: scale(1);
+      .beverages-card {
+
+        &-btn {
+          animation: .5s fadeInUp forwards 1s;
+        }
+
+        &-info {
+          &__title {
+            -webkit-animation: .4s fadeInUp .5s forwards;
+            animation: .4s fadeInUp .5s forwards;
+          }
+
+          &__text {
+            -webkit-animation: .5s fadeInUp .7s forwards;
+            animation: .5s fadeInUp .7s forwards;
+          }
+        }
+
+        &-img {
+          &__round {
+            transition: all 1s ease;
+            transform: translateX(-50%) scale(1);
+          }
+
+          &__product {
+            transition: all .7s ease .1s;
+            opacity: 1;
+            transform: scale(1);
+          }
+
+          &__fruit-1 {
+            transition: all 1s ease .2s;
+            transform: translateX(0) scale(1);
+          }
+
+          &__fruit-2 {
+            transition: all 1s ease .3s;
+            transform: scale(1);
+          }
+
+          &__sheet-1 {
+            -webkit-animation: .4s fadeInUp .5s forwards;
+            animation: .4s fadeInUp .5s forwards;
+          }
+          &__sheet-2 {
+            -webkit-animation: .5s fadeInUp .7s forwards;
+            animation: .5s fadeInUp .7s forwards;
+          }
+          &__sheet-3 {
+            -webkit-animation: .5s fadeInUp .8s forwards;
+            animation: .5s fadeInUp .8s forwards;
+          }
+          &__sheet-4 {
+            -webkit-animation: .55s fadeInUp .85s forwards;
+            animation: .55s fadeInUp .85s forwards;
+          }
+          &__sheet-5 {
+            -webkit-animation: .57s fadeInUp .9s forwards;
+            animation: .57s fadeInUp .9s forwards;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.product-beverage {
+  &-banner {
+    &__logo {
+      &.active {
+        img {
+          animation: 2.5s scale infinite;
+        }
       }
     }
   }
@@ -464,6 +573,12 @@
   0% { transform: translate(0px); }
   50%  { transform: translateY(6px); }
   100%   { transform: translateY(0px); }    
+}
+
+@keyframes scale {
+  0% { transform: scale(1); }
+  50%   { transform: scale(.95); }
+  100%   { transform: scale(1); }
 }
 
 /*------------------------------*/

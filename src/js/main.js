@@ -86,7 +86,7 @@ const slider = new Swiper(".js-beverages-slider", {
     crossFade: true
   },
   navigation: {
-    nextEl: ".swiper-button-next",
+    nextEl: ".beverages-arrow-link__right",
     prevEl: ".swiper-button-prev",
   },
   thumbs: {
@@ -195,6 +195,13 @@ $(function(){
   });
 
   showPopup(".product-beverage .js-show-popup", '#product-popup');
+
+  const audio = document.getElementById("product-beverage-audio");
+  $(".product-beverage-banner-voice__btn").on("click", function(e){
+    e.preventDefault();
+    $(".product-beverage-banner__logo").addClass("active");
+    audio.play();
+  })
 });
 
 
