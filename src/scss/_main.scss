@@ -13,10 +13,11 @@
   left: 50%;
   transform: translateX(-50%);
   border-radius: 500px;
+  cursor: pointer;
 
   &__icon {
     position: absolute;
-    top: 35px;
+    top: 27px;
     left: 50%;
     transform: translateX(-50%);
   }

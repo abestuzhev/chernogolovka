@@ -81,7 +81,10 @@ const products = new Swiper(".beverages-card-products", {
 const slider = new Swiper(".js-beverages-slider", {
   loop: true,
   spaceBetween: 10,
-  // effect: "fade",
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
