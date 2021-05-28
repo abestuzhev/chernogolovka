@@ -600,7 +600,9 @@
 
           svg {
             width: 13px;
-            margin-left: 2px;
+            &.icon-play {
+              margin-left: 2px;
+            }
           }
         }
       }

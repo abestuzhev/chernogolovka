@@ -8,6 +8,17 @@
 // });
 /****************************/
 
+
+
+
+/*------------------parallax*/
+const scene = document.getElementById('scene');
+const parallaxInstance = new Parallax(scene);
+
+
+/*-------------------------*/
+
+
 const shopssSlider = new Swiper('.shops-list', {
   direction: 'horizontal',
   loop: true,
@@ -197,10 +208,22 @@ $(function(){
   showPopup(".product-beverage .js-show-popup", '#product-popup');
 
   const audio = document.getElementById("product-beverage-audio");
-  $(".product-beverage-banner-voice__btn").on("click", function(e){
+  $(document).on("click", ".product-beverage-banner-voice__btn.play", function(e){
     e.preventDefault();
+    console.log("click play");
     $(".product-beverage-banner__logo").addClass("active");
     audio.play();
+    $(this).removeClass("play");
+    $(this).addClass("pause");
+  })
+
+  $(document).on("click", ".product-beverage-banner-voice__btn.pause", function(e){
+    e.preventDefault();
+    console.log("click pause");
+    $(".product-beverage-banner__logo").removeClass("active");
+    audio.pause();
+    $(this).removeClass("pause");
+    $(this).addClass("play");
   })
 });
 
