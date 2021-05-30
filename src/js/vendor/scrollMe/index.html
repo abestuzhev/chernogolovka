@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <title>ScrollMe</title>
+  <style>
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    body {
+      font-family: 'Open Sans';
+      font-weight: 200;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .jar {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('https://picsum.photos/1920/1280/?random');
+      background-position: center;
+      background-size: cover;
+    }
+
+    .jarcontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .optionsContainer {
+      background: linear-gradient(#FEAC5E, #C779D0, #4BC0C8);
+      padding: 7% 0;
+    }
+
+    .text {
+      font-family: 'Lobster', cursive;
+      font-size: 5rem;
+      color: white;
+    }
+
+    .description {
+      margin-top: 3%;
+      font-size: 1.4rem;
+    }
+
+    .icon  {
+      margin-top: 50px;
+      font-size: 70px;
+      cursor: pointer;
+    }
+
+    .icon:active {
+      color: pink;
+      transform: translateY(3px);
+    }
+
+    .mainText {
+      font-size: 5rem;
+    }
+
+    .moreText {
+      font-size: 16px;
+      width: 50vw;
+      margin: 25px auto;
+    }
+
+    .moreTextEnds {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="item">
+    <div class="img jar jarcontainer">
+      <h1 class=" text mainText">ScrollMe Plugin</h1>
+      <div class="jquery-script-ads" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+      <span class="icon">
+        <i class="fas fa-arrow-down"></i>
+      </span>
+    </div>
+  </div> <!-- Item ends -->
+
+  <div class="optionsContainer">
+    <div class="item item1">
+      <div class="scrollme BGforScrollMe">
+        <div class="animateme text" data-when="enter" data-from="0.9" data-to="0" data-opacity="0" data-translatex="-600">
+            Slide in
+        </div>
+      </div>
+
+      <div class="moreText">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div><!-- Item ends -->
+
+    <div class="item">
+      <div class="scrollme BGforScrollMe">
+        <div class="animateme text" data-when="enter" data-from="0.9" data-to="0" data-opacity="0" data-scalex="10">
+          Scale
+        </div>
+      </div>
+
+      <div class="moreText">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div><!-- Item ends -->
+
+
+    <div class="item">
+      <div class="scrollme BGforScrollMe rotateTitle">
+        <div class="animateme text" data-when="span" data-from="0" data-to="1" data-easing="easeinout" data-rotatey="720">
+          Rotate
+        </div>
+      </div>
+
+      <div class="moreText moreTextEnds">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div><!-- Item ends -->
+  </div>
+
+
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="jquery.scrollme.js"></script>
+  <script type="text/javascript">
+
+  $('.icon').click(function(){
+    $('html, body').animate({
+      scrollTop: $(".rotateTitle").offset().top
+    }, 3000);
+  });
+
+
+  </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

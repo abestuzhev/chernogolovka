@@ -9,11 +9,47 @@
 /****************************/
 
 
+/*---------------------------*/
+
+
 
 
 /*------------------parallax*/
-const scene = document.getElementById('scene');
-const parallaxInstance = new Parallax(scene);
+const scene = document.querySelectorAll('.js-scene');
+if(scene){
+  scene.forEach(item => {
+    new Parallax(item);
+  })
+}
+
+function deleteAnimation(){
+  if($(window).width() < 760){
+    $('div, p').each(function(){
+      $(this).removeClass('scale');
+      $(this).removeClass('js-animation');
+      $(this).removeClass('scroll-to-reveal');
+    });
+  }else {
+
+    $('.scroll-to-reveal').viewportChecker({
+      classToAdd: 'fadeInUp', // Class to add to the elements when they are visible
+      offset: 100
+    });
+
+    $('.js-animation').viewportChecker({
+      classToAdd: 'show', // Class to add to the elements when they are visible
+      offset: 100
+    });
+  }
+
+}
+
+deleteAnimation();
+
+$(window).on('resize', function(){
+  deleteAnimation();
+});
+
 
 
 /*-------------------------*/
@@ -210,7 +246,6 @@ $(function(){
   const audio = document.getElementById("product-beverage-audio");
   $(document).on("click", ".product-beverage-banner-voice__btn.play", function(e){
     e.preventDefault();
-    console.log("click play");
     $(".product-beverage-banner__logo").addClass("active");
     audio.play();
     $(this).removeClass("play");
@@ -219,7 +254,6 @@ $(function(){
 
   $(document).on("click", ".product-beverage-banner-voice__btn.pause", function(e){
     e.preventDefault();
-    console.log("click pause");
     $(".product-beverage-banner__logo").removeClass("active");
     audio.pause();
     $(this).removeClass("pause");

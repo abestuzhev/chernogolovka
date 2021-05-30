@@ -9,7 +9,7 @@
   .better-decor-14,
   .better-decor-17,
   .better-decor-bubbles {
-    display: none;
+    display: none !important;
   }
 
   .better-body {
@@ -259,7 +259,7 @@
 
   .better-img {
     width: 100%;
-    padding-top: 45%;
+    padding-top: 65%;
   }
 
   .better-decor-1 {
@@ -319,8 +319,8 @@
       }
 
       &__decor-1 {
-        right: -4%;
         img {
+          right: -4%;
           width: 35vw;
         }
       }
@@ -330,17 +330,17 @@
         }
       }
       &__decor-3 {
-        bottom: auto;
-        top: 4%;
         img {
+          bottom: auto;
+          top: 4%;
           width: 35vw;
         }
 
       }
       &__decor-4 {
-        bottom: 17%;
-        left: 11%;
         img {
+          bottom: 17%;
+          left: 11%;
           width: 18vw;
         }
       }
@@ -350,8 +350,8 @@
         }
       }
       &__decor-6 {
-        left: -6%;
         img {
+          left: -6%;
           width: 40vw;
         }
       }
@@ -407,6 +407,12 @@
 
   .mfp-content {
     width: 100%;
+  }
+
+  .better {
+    &-img {
+      overflow: hidden;
+    }
   }
 
 }
@@ -478,47 +484,47 @@
   }
 
   .better-decor-12 {
-    width: 15%;
+
     img {
-      width: 100%;
+      width: 15%;
     }
   }
 
   .better-decor-15 {
-    top: 23%;
-    right: 13%;
-    width: 22%;
+
 
     img {
-      width: 100%;
+      top: 23%;
+      right: 13%;
+      width: 22%;
     }
   }
 
   .better-decor-13 {
-    width: 17%;
+
     img {
-      width: 100%;
+      width: 17%;
     }
   }
 
   .better-decor-11 {
-    width: 18%;
+
     img {
-      width: 100%;
+      width: 18%;
     }
   }
 
   .better-decor-10 {
-    top: 36%;
-    left: 17%;
-    width: 12%;
+
     img {
-      width: 100%;
+      top: 36%;
+      left: 17%;
+      width: 12%;
     }
   }
 
   .better-decor-16 {
-    display: none;
+    display: none !important;
 
     img {
       width: 100%;
@@ -535,7 +541,7 @@
 
   .beverages-card-img__sheet-1,
   .beverages-card-img__sheet-2 {
-    display: none;
+    display: none !important;
   }
 
   .beverages-card-img__sheet-3 {
@@ -726,7 +732,9 @@
       line-height: 20px;
     }
 
-    &::after {
+    &::before,
+    &::after,
+    i {
       width: 40vw;
       height: 40vw;
     }
@@ -832,7 +840,7 @@
   }
 
   .better-img {
-    padding-top: 60%;
+    padding-top: 80%;
   }
 
   .beverages-card-img__round {

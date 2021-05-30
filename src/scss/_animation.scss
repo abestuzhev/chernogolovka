@@ -42,6 +42,10 @@
       /**/
     }
 
+    &-products {
+      opacity: 0;
+    }
+
 
   }
 
@@ -112,6 +116,13 @@
       }
     }
   }
+
+  &.show {
+    .beverages-card-products {
+      -webkit-animation: .57s fadeInUp .9s forwards;
+      animation: .57s fadeInUp .9s forwards;
+    }
+  }
 }
 
 .product-beverage {
@@ -126,7 +137,58 @@
   }
 }
 
+.better {
+  &.scroll-to-reveal {
+    opacity: 0;
 
+
+
+  }
+
+  //&.fadeInUp {
+  //  .better-decor-11 {
+  //    overflow: hidden;
+  //    img {
+  //      transform: translate(200px, 1000px);
+  //      transition: transform 1s ease-in-out 3s;
+  //
+  //    }
+  //  }
+  //}
+}
+
+.scroll-to-reveal.fadeInUp {
+  -webkit-animation: fadeInUp 1s ease-in-out;
+  animation: fadeInUp 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+
+
+.scroll-to-reveal {
+
+}
 /*-----------------------------------------*/
 
 .bubbles-container {
