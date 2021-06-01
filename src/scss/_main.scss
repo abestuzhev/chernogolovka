@@ -611,14 +611,33 @@
 
 .product-beverage {
 
-
-
   &-banner {
     display: flex;
     justify-content: center;
     padding-bottom: 23px;
     position: relative;
     background-size: cover;
+
+    &__bg {
+      position: absolute;
+      top: -20px;
+      bottom: -20px;
+      left: -20px;
+      right: -20px;
+      z-index: -1;
+
+      & > div {
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        display: block;
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
 
     &__scene {
       width: 100%;
