@@ -54,18 +54,18 @@
       .beverages-card {
 
         &-btn {
-          animation: .5s fadeInUp forwards 1s;
+          animation: .5s fadeInUpCustom forwards 1s;
         }
 
         &-info {
           &__title {
-            -webkit-animation: .4s fadeInUp .5s forwards;
-            animation: .4s fadeInUp .5s forwards;
+            -webkit-animation: .4s fadeInUpCustom .5s forwards;
+            animation: .4s fadeInUpCustom .5s forwards;
           }
 
           &__text {
-            -webkit-animation: .5s fadeInUp .7s forwards;
-            animation: .5s fadeInUp .7s forwards;
+            -webkit-animation: .5s fadeInUpCustom .7s forwards;
+            animation: .5s fadeInUpCustom .7s forwards;
           }
         }
 
@@ -92,24 +92,24 @@
           }
 
           &__sheet-1 {
-            -webkit-animation: .4s fadeInUp .5s forwards;
-            animation: .4s fadeInUp .5s forwards;
+            -webkit-animation: .4s fadeInUpCustom .5s forwards;
+            animation: .4s fadeInUpCustom .5s forwards;
           }
           &__sheet-2 {
-            -webkit-animation: .5s fadeInUp .7s forwards;
-            animation: .5s fadeInUp .7s forwards;
+            -webkit-animation: .5s fadeInUpCustom .7s forwards;
+            animation: .5s fadeInUpCustom .7s forwards;
           }
           &__sheet-3 {
-            -webkit-animation: .5s fadeInUp .8s forwards;
-            animation: .5s fadeInUp .8s forwards;
+            -webkit-animation: .5s fadeInUpCustom .8s forwards;
+            animation: .5s fadeInUpCustom .8s forwards;
           }
           &__sheet-4 {
-            -webkit-animation: .55s fadeInUp .85s forwards;
-            animation: .55s fadeInUp .85s forwards;
+            -webkit-animation: .55s fadeInUpCustom .85s forwards;
+            animation: .55s fadeInUpCustom .85s forwards;
           }
           &__sheet-5 {
-            -webkit-animation: .57s fadeInUp .9s forwards;
-            animation: .57s fadeInUp .9s forwards;
+            -webkit-animation: .57s fadeInUpCustom .9s forwards;
+            animation: .57s fadeInUpCustom .9s forwards;
           }
         }
 
@@ -119,8 +119,8 @@
 
   &.show {
     .beverages-card-products {
-      -webkit-animation: .57s fadeInUp .9s forwards;
-      animation: .57s fadeInUp .9s forwards;
+      -webkit-animation: .57s fadeInUpCustom .9s forwards;
+      animation: .57s fadeInUpCustom .9s forwards;
     }
   }
 }
@@ -145,7 +145,7 @@
 
   }
 
-  //&.fadeInUp {
+  //&.fadeInUpCustom {
   //  .better-decor-11 {
   //    overflow: hidden;
   //    img {
@@ -158,13 +158,13 @@
 }
 
 .scroll-to-reveal.fadeInUp {
-  -webkit-animation: fadeInUp 1s ease-in-out;
-  animation: fadeInUp 1s ease-in-out;
+  -webkit-animation: fadeInUpCustom 1s ease-in-out;
+  animation: fadeInUpCustom 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes fadeInUpCustom {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 50px, 0);
@@ -174,7 +174,7 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 
-@keyframes fadeInUp {
+@keyframes fadeInUpCustom {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 50px, 0);
@@ -585,7 +585,7 @@
   }
 }
 
-@keyframes fadeInUpOp {
+@keyframes fadeInUpCustomOp {
   0% {
     opacity: 0;
     transform: translate3d(0, 50px, 0);
@@ -597,7 +597,7 @@
   }
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInUpCustom {
   0% {
     opacity: 0;
     transform: translate3d(0, 50px, 0);
@@ -653,31 +653,31 @@
 
 
 .a-animation .a-turn-1 {
-  -webkit-animation: .4s fadeInUp .5s forwards;
-  animation: .4s fadeInUp .5s forwards;
+  -webkit-animation: .4s fadeInUpCustom .5s forwards;
+  animation: .4s fadeInUpCustom .5s forwards;
 }
 
 .a-animation .a-turn-2 {
-  -webkit-animation: .5s fadeInUp .7s forwards;
-  animation: .5s fadeInUp .7s forwards;
+  -webkit-animation: .5s fadeInUpCustom .7s forwards;
+  animation: .5s fadeInUpCustom .7s forwards;
 }
 
 .a-animation .a-turn-3 {
-  -webkit-animation: .5s fadeInUp .8s forwards;
-  animation: .5s fadeInUp .8s forwards;
+  -webkit-animation: .5s fadeInUpCustom .8s forwards;
+  animation: .5s fadeInUpCustom .8s forwards;
 }
 
 .a-animation .a-turn-4 {
-  -webkit-animation: .55s fadeInUp .85s forwards;
-  animation: .55s fadeInUp .85s forwards;
+  -webkit-animation: .55s fadeInUpCustom .85s forwards;
+  animation: .55s fadeInUpCustom .85s forwards;
 }
 
 .a-animation .a-turn-5 {
-  -webkit-animation: .57s fadeInUp .9s forwards;
-  animation: .57s fadeInUp .9s forwards;
+  -webkit-animation: .57s fadeInUpCustom .9s forwards;
+  animation: .57s fadeInUpCustom .9s forwards;
 }
 
 .a-animation .a-turn-6 {
-  -webkit-animation: .59s fadeInUp .95s forwards;
-  animation: .59s fadeInUp .95s forwards;
+  -webkit-animation: .59s fadeInUpCustom .95s forwards;
+  animation: .59s fadeInUpCustom .95s forwards;
 }

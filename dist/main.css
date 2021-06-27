@@ -161,7 +161,7 @@
             -ms-flex-align: center;
                 align-items: center; }
       .beverages-card-products__item {
-        margin-right: 34px;
+        margin-right: 10px;
         cursor: pointer;
         -webkit-transition: all .2s ease-in-out;
         -o-transition: all .2s ease-in-out;
@@ -1267,7 +1267,7 @@ html.blocked, body.blocked {
   .beverages-card-products-list {
     opacity: 0;
     visibility: hidden;
-    display: none; }
+    display: none !important; }
   .beverages-card-btn {
     top: 59%;
     left: 66%;
@@ -1379,7 +1379,32 @@ html.blocked, body.blocked {
     .product-popup__body {
       width: 75%; }
     .product-popup-info__calories {
-      padding-left: 20px; } }
+      padding-left: 20px; }
+  .beverages-card-img__product {
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .beverages-card-img__product img {
+      width: 100%; }
+  .beverages-card-img__fruit-1 {
+    width: 163px; }
+    .beverages-card-img__fruit-1 img {
+      width: 100%; }
+  .beverages-card-img__fruit-2 {
+    width: 163px; }
+    .beverages-card-img__fruit-2 img {
+      width: 100%; }
+  .beverages-card-img__round {
+    width: 400px;
+    height: 400px; } }
 
 @media (max-width: 1000px) {
   .better-grid {
@@ -1774,16 +1799,16 @@ html.blocked, body.blocked {
   opacity: 0; }
 
 .beverages-slider .swiper-slide-active .beverages-card-btn {
-  -webkit-animation: .5s fadeInUp forwards 1s;
-          animation: .5s fadeInUp forwards 1s; }
+  -webkit-animation: .5s fadeInUpCustom forwards 1s;
+          animation: .5s fadeInUpCustom forwards 1s; }
 
 .beverages-slider .swiper-slide-active .beverages-card-info__title {
-  -webkit-animation: .4s fadeInUp .5s forwards;
-  animation: .4s fadeInUp .5s forwards; }
+  -webkit-animation: .4s fadeInUpCustom .5s forwards;
+  animation: .4s fadeInUpCustom .5s forwards; }
 
 .beverages-slider .swiper-slide-active .beverages-card-info__text {
-  -webkit-animation: .5s fadeInUp .7s forwards;
-  animation: .5s fadeInUp .7s forwards; }
+  -webkit-animation: .5s fadeInUpCustom .7s forwards;
+  animation: .5s fadeInUpCustom .7s forwards; }
 
 .beverages-slider .swiper-slide-active .beverages-card-img__round {
   -webkit-transition: all 1s ease;
@@ -1819,28 +1844,28 @@ html.blocked, body.blocked {
           transform: scale(1); }
 
 .beverages-slider .swiper-slide-active .beverages-card-img__sheet-1 {
-  -webkit-animation: .4s fadeInUp .5s forwards;
-  animation: .4s fadeInUp .5s forwards; }
+  -webkit-animation: .4s fadeInUpCustom .5s forwards;
+  animation: .4s fadeInUpCustom .5s forwards; }
 
 .beverages-slider .swiper-slide-active .beverages-card-img__sheet-2 {
-  -webkit-animation: .5s fadeInUp .7s forwards;
-  animation: .5s fadeInUp .7s forwards; }
+  -webkit-animation: .5s fadeInUpCustom .7s forwards;
+  animation: .5s fadeInUpCustom .7s forwards; }
 
 .beverages-slider .swiper-slide-active .beverages-card-img__sheet-3 {
-  -webkit-animation: .5s fadeInUp .8s forwards;
-  animation: .5s fadeInUp .8s forwards; }
+  -webkit-animation: .5s fadeInUpCustom .8s forwards;
+  animation: .5s fadeInUpCustom .8s forwards; }
 
 .beverages-slider .swiper-slide-active .beverages-card-img__sheet-4 {
-  -webkit-animation: .55s fadeInUp .85s forwards;
-  animation: .55s fadeInUp .85s forwards; }
+  -webkit-animation: .55s fadeInUpCustom .85s forwards;
+  animation: .55s fadeInUpCustom .85s forwards; }
 
 .beverages-slider .swiper-slide-active .beverages-card-img__sheet-5 {
-  -webkit-animation: .57s fadeInUp .9s forwards;
-  animation: .57s fadeInUp .9s forwards; }
+  -webkit-animation: .57s fadeInUpCustom .9s forwards;
+  animation: .57s fadeInUpCustom .9s forwards; }
 
 .beverages.show .beverages-card-products {
-  -webkit-animation: .57s fadeInUp .9s forwards;
-  animation: .57s fadeInUp .9s forwards; }
+  -webkit-animation: .57s fadeInUpCustom .9s forwards;
+  animation: .57s fadeInUpCustom .9s forwards; }
 
 .product-beverage-banner__logo.active img {
   -webkit-animation: 2.5s scale infinite;
@@ -1850,12 +1875,12 @@ html.blocked, body.blocked {
   opacity: 0; }
 
 .scroll-to-reveal.fadeInUp {
-  -webkit-animation: fadeInUp 1s ease-in-out;
-  animation: fadeInUp 1s ease-in-out;
+  -webkit-animation: fadeInUpCustom 1s ease-in-out;
+  animation: fadeInUpCustom 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes fadeInUpCustom {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 50px, 0);
@@ -1865,7 +1890,7 @@ html.blocked, body.blocked {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 
-@keyframes fadeInUp {
+@keyframes fadeInUpCustom {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 50px, 0);
@@ -2189,7 +2214,7 @@ html.blocked, body.blocked {
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-@-webkit-keyframes fadeInUpOp {
+@-webkit-keyframes fadeInUpCustomOp {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 50px, 0);
@@ -2199,7 +2224,7 @@ html.blocked, body.blocked {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); } }
 
-@keyframes fadeInUpOp {
+@keyframes fadeInUpCustomOp {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 50px, 0);
@@ -2209,7 +2234,7 @@ html.blocked, body.blocked {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); } }
 
-@keyframes fadeInUp {
+@keyframes fadeInUpCustom {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 50px, 0);
@@ -2288,25 +2313,25 @@ html.blocked, body.blocked {
   opacity: 0; }
 
 .a-animation .a-turn-1 {
-  -webkit-animation: .4s fadeInUp .5s forwards;
-  animation: .4s fadeInUp .5s forwards; }
+  -webkit-animation: .4s fadeInUpCustom .5s forwards;
+  animation: .4s fadeInUpCustom .5s forwards; }
 
 .a-animation .a-turn-2 {
-  -webkit-animation: .5s fadeInUp .7s forwards;
-  animation: .5s fadeInUp .7s forwards; }
+  -webkit-animation: .5s fadeInUpCustom .7s forwards;
+  animation: .5s fadeInUpCustom .7s forwards; }
 
 .a-animation .a-turn-3 {
-  -webkit-animation: .5s fadeInUp .8s forwards;
-  animation: .5s fadeInUp .8s forwards; }
+  -webkit-animation: .5s fadeInUpCustom .8s forwards;
+  animation: .5s fadeInUpCustom .8s forwards; }
 
 .a-animation .a-turn-4 {
-  -webkit-animation: .55s fadeInUp .85s forwards;
-  animation: .55s fadeInUp .85s forwards; }
+  -webkit-animation: .55s fadeInUpCustom .85s forwards;
+  animation: .55s fadeInUpCustom .85s forwards; }
 
 .a-animation .a-turn-5 {
-  -webkit-animation: .57s fadeInUp .9s forwards;
-  animation: .57s fadeInUp .9s forwards; }
+  -webkit-animation: .57s fadeInUpCustom .9s forwards;
+  animation: .57s fadeInUpCustom .9s forwards; }
 
 .a-animation .a-turn-6 {
-  -webkit-animation: .59s fadeInUp .95s forwards;
-  animation: .59s fadeInUp .95s forwards; }
+  -webkit-animation: .59s fadeInUpCustom .95s forwards;
+  animation: .59s fadeInUpCustom .95s forwards; }
